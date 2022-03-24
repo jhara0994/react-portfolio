@@ -28,5 +28,4 @@ export default class About {
             </section>
         )
     }
-
 }

@@ -3,46 +3,45 @@ import React, { useState } from 'react'
 import { validateEmail } from '../utils/helpers'
 
 
-// Create state variables for the fields in the form
-// We are also setting their initial values to an empty string
-const [email, setEmail] = useState('');
-const [collabMessage, setCollabMessage] = useState('');
-const [errorMessage, setErrorMessage] = useState('');
+export default function Collab() {
+    // Create state variables for the fields in the form
+    // We are also setting their initial values to an empty string
+    const [email, setEmail] = useState('');
+    const [collabMessage, setCollabMessage] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
 
 
-const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { target } = e;  
-    const inputType = target.name;
-    const inputValue = target.value;
+    const handleInputChange = (e) => {
+        // Getting the value and name of the input which triggered the change
+        const { target } = e;  
+        const inputType = target.name;
+        const inputValue = target.value;
 
-    if (inputType === email) {
-        setEmail(inputValue)
-    } else if (inputType === collabMessage) {
-        setCollabMessage(inputValue)
-    }
-}
-
-const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
-    e.preventDefault();
-    
-    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-    if (!validateEmail(email)) {
-        setErrorMessage('Email is invalid! Please use an valid email so we can collaborate.');
-        // We want to exit out of this code block if something is wrong so that the user can correct it
-        return;
+        if (inputType === email) {
+            setEmail(inputValue)
+        } else if (inputType === collabMessage) {
+            setCollabMessage(inputValue)
+        }
     }
 
-    alert(`Hello ${email}`);
+    const handleFormSubmit = (e) => {
+        // Preventing the default behavior of the form submit (which is to refresh the page)
+        e.preventDefault();
     
-    // If everything goes according to plan, we want to clear out the input after a successful registration.
-    setEmail('');
-    setCollabMessage('')
-}
+        // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+        if (!validateEmail(email)) {
+            setErrorMessage('Email is invalid! Please use an valid email so we can collaborate.');
+            // We want to exit out of this code block if something is wrong so that the user can correct it
+            return;
+        }
+
+        alert(`Hello ${email}`);
     
-export default class Collab {
-    render() {
+        // If everything goes according to plan, we want to clear out the input after a successful registration.
+        setEmail('');
+        setCollabMessage('')
+    }
+    
         return(
             <div className="collab-page">
                 <h2>Collaborators Welcome</h2>
@@ -76,5 +75,5 @@ export default class Collab {
             </div>
         
         )
-    }
 }
+
