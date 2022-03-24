@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { validateEmail } from '../utils/helpers'
 
 
-export default function Collab() {
+export default function Collab(props) {
     // Create state variables for the fields in the form
     // We are also setting their initial values to an empty string
     const [email, setEmail] = useState('');

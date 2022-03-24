@@ -1,7 +1,7 @@
 import React from 'react'
 import GtWork from '../data'
 
-export default function MyWork () {
+export default function MyWork (props) {
     return (
         <section id="work">
             <div className="work-header">

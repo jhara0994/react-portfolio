@@ -1,7 +1,6 @@
 import React from 'react'
 
-export default class About {
-    render() {
+export default function About (props) {
         return (
             <section id="about">
                 <div className="row">
@@ -27,5 +26,4 @@ export default class About {
                 </div>
             </section>
         )
-    }
 }
