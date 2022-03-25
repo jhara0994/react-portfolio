@@ -1,17 +1,15 @@
 import './App.css';
-import Navbar from './components/Navbar'
+import Header from './components/Header'
 import About from './components/About'
-import Work from './components/Work'
-// import Skills from './components/Skills'
+import Portfolio from './components/Portfolio'
 import Collaborator from './components/Collab'
 
 function App() {
   return (
     <main className="main">
-      <Navbar className="navContainer" />
+      <Header className="pageHeader" />
       <About className="aboutContainer" />
-      <Work className="projectContainer" />
-      {/* <Skills className="skillsContainer" /> */}
+      <Portfolio className="projectContainer" />
       <Collaborator className="contactContainer" />
     </main>
   );
