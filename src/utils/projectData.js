@@ -1,4 +1,4 @@
-const projects = [
+export const projects = [
     {
         project: "Disaster Factor",
         subtitle: "Find your disaster factor!",
@@ -9,4 +9,4 @@ const projects = [
     }
 ]
 
-export default projects
+

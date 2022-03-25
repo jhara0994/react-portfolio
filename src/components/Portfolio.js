@@ -1,6 +1,6 @@
 import React from 'react'
-import { projects } from '../projectData'
-import { skills } from '../skillData'
+import { projects } from '../utils/projectData'
+import { skills } from '../utils/skillData'
 
 export default function Portfolio (props) {
     return (

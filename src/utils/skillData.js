@@ -1,4 +1,4 @@
-const skills = [
+export const skills = [
     {
         title: "Languages Used",
         skill: [ "HTML", "CSS", "Javascript", "Node" ]
@@ -13,4 +13,3 @@ const skills = [
     }
 ]
 
-export default skills

@@ -1,4 +1,5 @@
 import React from 'react'
+import me from '../me.jpeg'
 
 export default function About (props) {
         return (
@@ -9,6 +10,7 @@ export default function About (props) {
                     </div>
                     <div className=" nine columns main-col">
                         <h2>About Me</h2>
+                        <img src={me} alt="profile-pic" />
                         <div className="row">
                             <p className="bio"> 
                                 I am a full-stack developer that is always looking to learn more and develop all types of web applications. My current programming interest is 
@@ -19,16 +21,6 @@ export default function About (props) {
                                 If you are interested in utilizing my skills, please do not hesitate to reach out. There is a form in the Collaborator's Corner you can complete
                                 if you would like to develop and application with me. I look forward to hearing from all of you! 
                             </p>
-                            <div className="columns contact-details">
-                                <h2>Contact Details</h2>
-                                <div className="contacts">
-                                    <span className="address">1285 Alcovy Station Rd., Covington, GA</span>
-                                    <span className="phone-number">404-285-4719</span>
-                                    <span className="email">jharalson29@gmail.com</span>
-                                    <span className="linkedIn"></span>
-                                    <span className="github"></span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

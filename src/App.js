@@ -1,8 +1,9 @@
 import './App.css';
 import Header from './components/Header'
+import Footer from './components/Footer'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
-import Collaborator from './components/Collab'
+// import Collaborator from './components/Collab'
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Header className="pageHeader" />
       <About className="aboutContainer" />
       <Portfolio className="projectContainer" />
-      <Collaborator className="contactContainer" />
+      <Footer className="footerContainer" />
     </main>
   );
 }
