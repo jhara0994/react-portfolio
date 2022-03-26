@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-export default class Header {
+
+export default class Header extends Component {
     render() {
         // let resumeData = this.props.resumeData;
         return (
@@ -8,12 +9,11 @@ export default class Header {
                 <h2>Jared Haralson - Web Developer</h2>
                 <nav id="nav-container">
                     <ul id="nav">
-                        <li className="home-page"><a href="#home">Home</a></li>
-                        <li className="about-me"><a href="#about">About Me</a></li>
-                        <li className="portfolio"><a href="#portfolio">Portfolio</a></li>
-                        <li className="resume"><a href="#resume">Resume</a></li>
-                        <li className="contact"><a href="#contact">Contact Me</a></li>
-                        <li className="collab"><a href="#collab">Collaborators Corner</a></li>
+                        <a href="#home">Home</a>
+                        <a href="#about">About Me</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#resume">Resume</a>
+                        <a href="#contact">Contact Me</a>
                     </ul>
                 </nav>
             </header>

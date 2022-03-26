@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(steelblue, grey)
+}
+
+/* CSS for header */
+header {
+    padding-top: 20px;
+    height: 150px; 
+    width: 100vw;
+    border-bottom: 5px solid black;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header h2 {
+    font-size: 32px;
+    font-weight: 750;
+}
+
+#nav-container {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url("./images/navbar_bg.jpeg");
+    background-size: 100%;
+    width: 50%
+
+}
+
+#nav a {
+    color: blue;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px;
+    border: none;
+    transition: border 0.3s;
+}    
+
+#nav a:hover {
+    color: darkblue;
+    border: 3px solid darkblue;
+}
+
+/* CSS for About section */
+.profile-pic {
+    display: block;
+    width: 15%;
+    height: 200px;
+    padding: 10px;
+    float: left;
+}
+
+.bio-container h2 {
+    font-size: 32px;
+}
+
+.bio {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* CSS for Portfolio section (Work, Skills) */
+/* Work Cards */
+.project-header h2 {
+    font-size: 32px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 400px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+.card-details a {
+    font-size: 22px;
+    color: yellowgreen;
+}
+
+#card-img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Skill Cards */
+.skills-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 400px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+
+
+
