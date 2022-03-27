@@ -2,7 +2,16 @@ import React, { Component } from 'react'
 import { projects } from '../utils/projectData'
 import { skills } from '../utils/skillData'
 import disaster from '../images/disaster.jpeg'
+import Card from 'react-bootstrap'
 
+
+const cardLoop = () => {
+    var skillsCard =[]
+    for (var i = 0; i < projects.length; i++) {
+        skillsCard.push(<div className="skills-card" key={i}></div>)
+    }
+    return skillsCard
+}
 export default class Portfolio extends Component {
     render() {
     return (

@@ -9,7 +9,7 @@ export const skills = [
     },
     {
         title: "Javascript Libraries and Frameworks",
-        skill: [ "React", "jQuery", "MERN", "MVC" ]
+        skill: [ "React", "MERN Stack", "jQuery", "MVC" ]
     }
 ]
 
