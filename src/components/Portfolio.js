@@ -21,8 +21,8 @@ export default class Portfolio extends Component {
                     <h2>My Work</h2>
                 </div>
                 <div className="card">
-                    {projects.map((project) => (
-                        <div className="card-details">
+                    {projects.map((project, i) => (
+                        <div className="card-details" key={i}>
                                 <a href={project.link}>
                                 <h3>{project.project}</h3>
                                 <img src={disaster} alt="project-screenshot" id="card-img" />
@@ -30,18 +30,19 @@ export default class Portfolio extends Component {
                             <p><h3>Description:</h3> {project.description}</p>
                             <a href={project.repo}>Project Repository</a> 
                         </div>
-                ))}
+                    
+                    ))}
                 </div>
             </div>
             <div className="skills-header">
                     <h2>Skills</h2>
             </div>
             <div className="skills-card">
-                {skills.map((skill) => (
-                    <div>
-                        <h4>{skill.title}</h4>
-                        <p>{skill.skill}</p>
-                    </div>
+                {skills.map((skill, i) => (
+                        <div key={i}>
+                            <h4>{skill.title}</h4>
+                            <p>{skill.skill}</p>
+                        </div>
                 ))}
             </div>
         </section>
