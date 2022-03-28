@@ -1,15 +1,23 @@
 export const skills = [
     {
         title: "Languages Used",
-        skill: [ "HTML", "CSS", "Javascript", "Node" ]
+        skill: [ " HTML ,", " CSS ,", " Javascript ,", " Node " ]
     },
     {
         title: "CSS Frameworks",
-        skill: [ "Bootstrap", "Bulma" ]
+        skill: [ " Bootstrap ,", " Bulma " ]
     },
     {
-        title: "Javascript Libraries and Frameworks",
-        skill: [ "React", "MERN Stack", "jQuery", "MVC" ]
+        title: "Javascript Frameworks",
+        skill: [" MERN Stack ,", " MVC ,", " PWA " ]
+    },
+    {
+        title: "Javascript Libraries",
+        skill: [ " React ,", " Node ,", " Express ,", " jQuery"]
+    },
+    {
+        title: "Databases",
+        skill: [ " MySQL ,", " MongoDB "]
     }
 ]
 

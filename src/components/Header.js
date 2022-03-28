@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Resume from '../images/Resume.pdf'
 export default class Header extends Component {
     render() {
         // let resumeData = this.props.resumeData;
@@ -10,7 +11,7 @@ export default class Header extends Component {
                         <a href="#home">Home</a>
                         <a href="#about">About Me</a>
                         <a href="#portfolio">Portfolio</a>
-                        <a href="#resume">Resume</a>
+                        <a href={Resume}>Resume</a>
                         <a href="#contact">Contact Me</a>
                     </ul>
                 </nav>

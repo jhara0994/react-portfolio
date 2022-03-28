@@ -5,7 +5,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
-// import Collaborator from './components/Collab'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       <Header className="pageHeader" />
       <About className="aboutContainer" />
       <Portfolio className="projectContainer" />
+      <Contact className="contactContainer" />
       <Footer className="footerContainer" />
     </main>
   );
