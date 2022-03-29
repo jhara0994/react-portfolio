@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import me from '../images/me.jpeg'
 
-export default class About extends Component {
-    render() {
+export default function About () {
         return (
             <section id="about">
                 <div className="row">
@@ -10,7 +9,7 @@ export default class About extends Component {
                         <img className="profile-pic" src={me} alt="profile-pic" />
                     </div>
                     <div className="bio-container">
-                        <h2>About Me</h2>
+                        <h2 id="about-option">About Me</h2>
                         <div className="bio">
                             <p className="bio-one"> 
                                 I am a full-stack developer that is always looking to learn more and develop all types of web applications. My current programming interest is 
@@ -27,5 +26,5 @@ export default class About extends Component {
                 </div>
             </section>
         )
-    }
 }
+

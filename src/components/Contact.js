@@ -43,37 +43,38 @@ export default function Collab(props) {
     }
     
         return(
-            <div className="collab-page">
-                <h2>Collaborators Welcome</h2>
-                <p>
-                    As an active programmer, I am always open to new ideas and projects that will fix a real-world issue while also testing and enhancing my knowledge of coding.
-                    Whether you are a programmer as well or a web user that wants to submit an idea or problem that needs a solution, please fill out the form below
-                    and submit it to me. I will reach out to everyone on a first come, first serve basis. I look forward to working with you all. Happy Coding!
-                </p>
-                <form className="collab-form">
-                    <input 
-                        value={email}
-                        name="email"
-                        onChange={handleInputChange}
-                        type="email"
-                        placeholders="yourEmail@gmail.com"
-                    />
-                    <input
-                        value={collabMessage}
-                        name="collabMessage"
-                        onChange={handleInputChange}
-                        type="text"
-                        placeholder="Ideas for solving go here!"
-                    />
-                    <button type="button" onClick={handleFormSubmit}>Submit</button>
-                </form> 
-                {errorMessage && (
-                    <div>
-                        <p className="error-text">{errorMessage}</p>
-                    </div>
-                )}
-            </div>
-        
+            <section className="contact" id="contact">
+                <div className="collab-page">
+                    <h2 className="title">Collaborators Welcome</h2>
+                    <p>
+                        As an active programmer, I am always open to new ideas and projects that will fix a real-world issue while also testing and enhancing my knowledge of coding.
+                        Whether you are a programmer as well or a web user that wants to submit an idea or problem that needs a solution, please fill out the form below
+                        and submit it to me. I will reach out to everyone on a first come, first serve basis. I look forward to working with you all. <br></br><b>Happy Coding!</b>
+                    </p>
+                    <form className="collab-form">
+                        <input className="email"
+                            value={email}
+                            name="email"
+                            onChange={handleInputChange}
+                            type="email"
+                            placeholder="yourEmail@gmail.com"
+                        />
+                        <input className="message"
+                            value={collabMessage}
+                            name="collabMessage"
+                            onChange={handleInputChange}
+                            type="text"
+                            placeholder="Ideas for solving go here!"
+                        />
+                        <button type="button" onClick={handleFormSubmit}>Submit</button>
+                    </form> 
+                    {errorMessage && (
+                        <div>
+                            <p className="error-text">{errorMessage}</p>
+                        </div>
+                    )}
+                </div>
+            </section>        
         )
 }
 

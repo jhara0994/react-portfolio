@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
+import Resume from './components/Resume'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header className="pageHeader" />
       <About className="aboutContainer" />
       <Portfolio className="projectContainer" />
+      <Resume className="resumeContainer" />
       <Contact className="contactContainer" />
       <Footer className="footerContainer" />
     </main>

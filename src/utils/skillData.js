@@ -18,6 +18,10 @@ export const skills = [
     {
         title: "Databases",
         skill: [ " MySQL ,", " MongoDB "]
+    },
+    {
+        title: "Quality Assurance",
+        skill: [" Jest "]
     }
 ]
 

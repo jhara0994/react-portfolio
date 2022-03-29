@@ -1,21 +1,30 @@
-import React, { Component } from 'react'
-import Resume from '../images/Resume.pdf'
-export default class Header extends Component {
-    render() {
-        // let resumeData = this.props.resumeData;
-        return (
-            <header id="home">
-                <h2>Jared Haralson - Web Developer</h2>
-                <nav id="nav-container">
-                    <ul id="nav">
-                        <a href="#home">Home</a>
-                        <a href="#about">About Me</a>
-                        <a href="#portfolio">Portfolio</a>
-                        <a href={Resume}>Resume</a>
-                        <a href="#contact">Contact Me</a>
-                    </ul>
-                </nav>
-            </header>
-        )
-    }
+import React from 'react'
+import {
+    HashRouter as Router,
+    Routes,
+    Route,
+    Navigate,
+    useNavigate,
+} from "react-router-dom"
+import About from './About'
+import Portfolio from './Portfolio'
+import Contact from './Contact'
+import Resume from './Resume'
+import NavBar from './NavBar'
+
+export default function Header() {
+    return (
+        <React.Fragment>
+        <Router>
+            <NavBar />
+            <Routes>
+                <Route path="/" element={<Navigate replace to="/about" />} />  
+                <Route path='/about' component={About} />
+                <Route path='/portfolio' component={Portfolio} />
+                <Route path='/contact' component={Contact} />
+                <Route path='/resume' component={Resume} />
+            </Routes>
+        </Router>
+        </React.Fragment>
+    )
 }
