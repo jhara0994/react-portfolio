@@ -1,5 +1,6 @@
 import React from 'react'
 import { projects } from '../utils/projectData'
+
 export default function Portfolio () {
     return (
         <section id="portfolio">

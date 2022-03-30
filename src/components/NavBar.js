@@ -1,38 +1,34 @@
-import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom'
+import React from 'react'
+import Portfolio from './Portfolio'
 
-
-
-export default function NavBar () {
+export default function NavBar ({ currentPage, handlePageChange }) {
         return (
             <header id="home">
                 <h2>Jared Haralson - Web Developer</h2>
-                <div id="nav-container">
-                    <NavLink
-                        activeClassName="navbar_link--active"
-                        className="navbar__link"
-                        to="/about">
-                            About
-                    </NavLink>
-                    <NavLink
-                        activeClassName="navbar_link--active"
-                        className="navbar__link"
-                        to="/portfolio">
-                            Portfolio
-                    </NavLink>
-                    <NavLink
-                        activeClassName="navbar_link--active"
-                        className="navbar__link"
-                        to="/contact">
-                            Contact ME
-                    </NavLink>
-                    <NavLink
-                        activeClassName="navbar_link--active"
-                        className="navbar__link"
-                        to="/resume">
-                            Resume
-                    </NavLink>
-                </div>
+                <nav id="nav-container">
+                    <ul id="nav">
+                        <a href="#about" 
+                            onClick={() => handlePageChange('About')}
+                            className={currentPage === 'About' ? 'nav-link-active': 'nav-link'}>
+                                ABOUT ME
+                        </a>
+                        <a href="#portfolio" 
+                            onClick={() => handlePageChange('Portfolio')}
+                            className={currentPage === 'Portfolio' ? 'nav-link-active': 'nav-link'}>
+                                PORTFOLIO
+                        </a>
+                        <a href="#contact" 
+                            onClick={() => handlePageChange('Contact')}
+                            className={currentPage === 'Contact' ? 'nav-link-active': 'nav-link'}>
+                                CONTACT
+                        </a>
+                        <a href="#resume" 
+                            onClick={() => handlePageChange('Resume')}
+                            className={currentPage === 'Resume' ? 'nav-link-active': 'nav-link'}>
+                                RESUME
+                        </a>
+                    </ul>
+                </nav>
             </header>
         )
 }
@@ -44,10 +40,3 @@ export default function NavBar () {
 
 
 
-{/* <ul id="nav">
-    <a href="#home" className="nav-option">Home</a>
-    <a href="#about" id="about-option">About Me</a>
-    <a href="#portfolio" id="portfolio-option">Portfolio</a>
-    <a href={Resume} id="resume-option">Resume</a>
-    <a href="#contact" id="contact-option">Contact Me</a>
-</ul> */}

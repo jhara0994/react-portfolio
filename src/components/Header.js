@@ -5,6 +5,8 @@ import {
     Route,
     Navigate,
     useNavigate,
+    Link,
+    matchRoutes,
 } from "react-router-dom"
 import About from './About'
 import Portfolio from './Portfolio'
@@ -14,17 +16,34 @@ import NavBar from './NavBar'
 
 export default function Header() {
     return (
-        <React.Fragment>
         <Router>
             <NavBar />
+            {/* <MenuLink
+                activeOnlyWhenExact={true}
+                to='/'
+                label="About"
+            /> */}
             <Routes>
-                <Route path="/" element={<Navigate replace to="/about" />} />  
+                <Route exact path="/" element={<Navigate replace to="/about" />} />  
                 <Route path='/about' component={About} />
                 <Route path='/portfolio' component={Portfolio} />
                 <Route path='/contact' component={Contact} />
                 <Route path='/resume' component={Resume} />
             </Routes>
         </Router>
-        </React.Fragment>
     )
 }
+
+function MenuLink({ label, to, activeOnlyWhenExact }) {
+    let match = matchRoutes({
+      path: to,
+      exact: activeOnlyWhenExact
+    });
+  
+    return (
+      <div className={match ? "active" : ""}>
+        {match && "> "}
+        <Link to={to}>{label}</Link>
+      </div>
+    );
+  }

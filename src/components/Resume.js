@@ -6,9 +6,6 @@ export default function Resume() {
         <section id="resume">
             <div className="resume-container">
                 <div className="resume-body">
-                    <div className="resume-header">
-                        <h2>Download Resume: <a href="https://github.com/jhara0994/react-portfolio/blob/main/src/images/Resume.pdf">Jared Haralson</a></h2>
-                    </div>
                     <div className="skills-header">
                         <h2>Skills</h2>
                     </div>
@@ -22,6 +19,9 @@ export default function Resume() {
                         </div>
                     </div>
                     ))}
+                </div>
+                <div className="resume-link">
+                    <h2>Download Resume: <a href="https://github.com/jhara0994/react-portfolio/blob/main/src/images/Resume.pdf">Jared Haralson</a></h2>
                 </div>
             </div>
         </section>
