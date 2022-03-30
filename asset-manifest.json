@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.213c6970.css",
+    "main.js": "/react-portfolio/static/js/main.c4e35262.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/pro-event-bg.png": "/react-portfolio/static/media/pro-event-bg.84ea80f21da1a0f4b437.png",
+    "static/media/disaster.jpeg": "/react-portfolio/static/media/disaster.7737a9fa9caec02409fe.jpeg",
+    "static/media/text-editor.png": "/react-portfolio/static/media/text-editor.b33e0a484def02f3a036.png",
+    "static/media/Java-quiz.png": "/react-portfolio/static/media/Java-quiz.9c8dbb27eec736c9e3d4.png",
+    "static/media/planner.png": "/react-portfolio/static/media/planner.f340a92d16161c323742.png",
+    "static/media/note-taker_bg.png": "/react-portfolio/static/media/note-taker_bg.1822bd9dd836ab913b16.png",
+    "static/media/footer-bg.png": "/react-portfolio/static/media/footer-bg.0ef83f9b8e5f91992f4a.png",
+    "static/media/me.jpeg": "/react-portfolio/static/media/me.c2f9d8feef908f894f60.jpeg",
+    "index.html": "/react-portfolio/index.html",
+    "main.213c6970.css.map": "/react-portfolio/static/css/main.213c6970.css.map",
+    "main.c4e35262.js.map": "/react-portfolio/static/js/main.c4e35262.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.213c6970.css",
+    "static/js/main.c4e35262.js"
+  ]
+}
