@@ -1,5 +1,7 @@
 # My React Portfolio
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+<img width="1436" alt="react-portfolio" src="https://user-images.githubusercontent.com/92455472/161140402-a0aea7b3-ee8a-4099-b90a-8e57f8af2362.png">
+
 ## Table of Contents
 
 1.  [Deployed-App](#deployed-app)
