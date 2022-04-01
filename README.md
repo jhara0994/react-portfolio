@@ -14,7 +14,7 @@
 8.  [Questions](#questions)
 
 ## Deployed-App:
-### https://jh-react-portfolio.herokuapp.com/
+### https://jhara0994.github.io/react-portfolio/
 ## Description:
 ### This is a single page application that shows a short bio, my coding work, tech skills, and a contact form.
 ## Installation:
