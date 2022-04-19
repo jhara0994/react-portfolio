@@ -20,7 +20,7 @@ export default function About () {
                                 personal interest with my programming interest and build an application that many others could and would enjoy using.
                             </p>
                             <p className="bio-two">
-                                If you are interested in utilizing my skills, please do not hesitate to reach out. There is a form in the Collaborator's Corner you can complete
+                                If you are interested in utilizing my skills, please do not hesitate to reach out. There is a form in the Contact section you can complete
                                 if you would like to develop and application with me. I look forward to hearing from all of you! 
                             </p>
                         </div>
