@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import NavBar from './NavBar'
-import Portfolio from './Portfolio'
-import Footer from './Footer'
-import About from './About'
-import Contact from './Contact'
-import Resume from './Resume'
+import NavBar from '../NavBar/NavBar'
+import Portfolio from '../Portfolio/Portfolio'
+import Footer from '../Footer/Footer'
+import About from '../About/About'
+import Contact from '../Contact/Contact'
+import Resume from '../Resume/Resume'
 
 export default function HomePage() {
     const [currentPage, setCurrentPage] = useState('About')

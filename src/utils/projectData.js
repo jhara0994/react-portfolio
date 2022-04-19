@@ -1,11 +1,11 @@
 export const projects = [
     {
-        project: "Disaster Factor",
-        image: require('../images/disaster.jpeg'),
+        project: "The Art Store",
+        image: require('../images/E-Com.png'),
         description: 
-            "Using NASA's EONET and Google Maps APIs, this website allows you to search by 4 main disasters and track them on the map.",
-        link: 'https://jhara0994.github.io/EONET/',
-        repo: 'https://github.com/jhara0994/EONET',
+            "An e-commerce store with a buyer and seller dashboard that allows users to post their art work for sell.",
+        link: 'https://art-e-commerce-892.herokuapp.com/',
+        repo: 'https://github.com/jhara0994/MERN-E-Commerce',
     },
     {
         project: "Pro Event Planning",
@@ -14,6 +14,14 @@ export const projects = [
             "A event planning application that uses the weather to update and notify attendees of conditions on the day of the event.",
         link: 'https://shaq-pro-event-planning.herokuapp.com/',
         repo: 'https://github.com/jhara0994/Pro-Event-Planning',
+    },
+    {
+        project: "Disaster Factor",
+        image: require('../images/disaster.jpeg'),
+        description: 
+            "Using NASA's EONET and Google Maps APIs, this website allows you to search by 4 main disasters and track them on the map.",
+        link: 'https://jhara0994.github.io/EONET/',
+        repo: 'https://github.com/jhara0994/EONET',
     },
     {
         project: "Text Editor",

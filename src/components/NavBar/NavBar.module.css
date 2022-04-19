@@ -1,0 +1,59 @@
+header {
+    padding-top: 20px;
+    height: 150px; 
+    width: 100vw;
+    border-bottom: 5px solid black;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h2 {
+    font-size: 32px;
+    font-weight: 750;
+    width: 100%;
+    text-align: center;
+}
+
+.nav {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url("../../images/navbar_bg.jpeg");
+    background-size: 100%;
+    width: 50%;
+    text-align: center;
+
+}
+
+.nav a {
+    color: blue;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px;
+    border: none;
+    transition: border 0.3s;
+}    
+
+.nav a:hover {
+    color: darkblue;
+    border: 3px solid darkblue;
+}
+
+.navLinkActive{
+    background-color: yellow;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .nav a {
+        font-size: 18px;
+        margin-left: 0px
+    }
+}

@@ -8,11 +8,11 @@ import {
     Link,
     matchRoutes,
 } from "react-router-dom"
-import About from './About'
-import Portfolio from './Portfolio'
-import Contact from './Contact'
-import Resume from './Resume'
-import NavBar from './NavBar'
+import About from '../About/About'
+import Portfolio from '../Portfolio/Portfolio'
+import Contact from '../Contact/Contact'
+import Resume from '../Resume/Resume'
+import NavBar from '../NavBar/NavBar'
 
 export default function Header() {
     return (

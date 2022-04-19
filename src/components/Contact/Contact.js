@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
+import style from './Contact.module.css'
 
-import { validateEmail } from '../utils/helpers'
+import { validateEmail } from '../../utils/helpers'
 
 
 export default function Collab(props) {
@@ -44,7 +45,7 @@ export default function Collab(props) {
     
         return(
             <section className="contact" id="contact">
-                <div className="collab-page">
+                <div className={style.collabPage}>
                     <h2 className="title">Collaborators Welcome</h2>
                     <p>
                         As an active programmer, I am always open to new ideas and projects that will fix a real-world issue while also testing and enhancing my knowledge of coding.

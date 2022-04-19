@@ -1,16 +1,18 @@
+import { css } from '@mui/styled-engine'
 import React, { Component } from 'react'
-import me from '../images/me.jpeg'
+import me from '../../images/me.jpeg'
+import style from './About.module.css'
 
 export default function About () {
         return (
             <section id="about">
                 <div className="row">
                     <div className="columns">
-                        <img className="profile-pic" src={me} alt="profile-pic" />
+                        <img className={style.profilePic} src={me} alt="profile-pic" />
                     </div>
-                    <div className="bio-container">
+                    <div className={style.bioContainer}>
                         <h2 id="about-option">About Me</h2>
-                        <div className="bio">
+                        <div className={style.bio}>
                             <p className="bio-one"> 
                                 I am a full-stack developer that is always looking to learn more and develop all types of web applications. My current programming interest is 
                                 in learning more about REACT, VIEW, and Angular as well as looking into other programming languages like Python and Haskell. My personal interest 

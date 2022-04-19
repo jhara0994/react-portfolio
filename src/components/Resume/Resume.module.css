@@ -1,0 +1,65 @@
+/* Skill Cards */
+.resumeContainer h2{
+    text-align: center;
+    font-size: 26px;
+}
+
+.projectContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+.cardContainer {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    height: 130px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 350px;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+ 
+.skills h3 {
+    padding-top: 15px;
+    color: whitesmoke;
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+.skills p {
+    font-size: 20px;
+    color: limegreen;
+    font-weight: 700;
+}
+
+.resumeLink {
+    text-align: center;
+    font-size: 22px;
+}
+
+.resumeLink a{
+    color: yellow;
+}
+
+.resumeLink a:hover{
+    color: greenyellow;
+    font-size: 32px;
+}

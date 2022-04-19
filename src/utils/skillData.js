@@ -1,11 +1,11 @@
 export const skills = [
     {
         title: "Languages Used",
-        skill: [ " HTML ,", " CSS ,", " Javascript ,", " Node " ]
+        skill: [ " HTML ,", " CSS ,", " Javascript " ]
     },
     {
         title: "CSS Frameworks",
-        skill: [ " Bootstrap ,", " Bulma " ]
+        skill: [ " Bootstrap ,", " Bulma ", " Material " ]
     },
     {
         title: "Javascript Frameworks",
@@ -13,7 +13,7 @@ export const skills = [
     },
     {
         title: "Javascript Libraries",
-        skill: [ " React ,", " Node ,", " Express ,", " jQuery"]
+        skill: [ " React ,", " Node ,", " Express ,", " jQuery ,", " Handlebars "]
     },
     {
         title: "Databases",
@@ -22,6 +22,10 @@ export const skills = [
     {
         title: "Quality Assurance",
         skill: [" Jest "]
+    },
+    {
+        title: "Application Programming Interface (API)",
+        skill: [" Google Maps API ,", "Context API "]
     }
 ]
 

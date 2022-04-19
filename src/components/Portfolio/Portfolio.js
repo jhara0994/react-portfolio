@@ -1,17 +1,17 @@
 import React from 'react'
-import { projects } from '../utils/projectData'
+import { projects } from '../../utils/projectData'
+import style from './Portfolio.module.css'
 
 export default function Portfolio () {
     return (
         <section id="portfolio">
-            <div className="projects">
-                <div className="project-header">
-                    <h2 className="title">Portfolio</h2>
-                </div>
+            <div className={style.projects}>
+                <h2>Portfolio</h2>
+                <div className={style.projectContainer}>
                 {projects.map((project, i) => (
-                <div className="project-container">
-                    <div className="card row">
-                        <div className="card-details" key={i}>
+                <div className={style.cardContainer}>
+                    <div className={style.card}>
+                        <div className={style.cardDetails} key={i}>
                                 <a href={project.link}>
                                     <h3>{project.project}</h3>
                                     <img src={project.image} title="project-screenshots" alt={project.project} id="card-img" />
@@ -22,6 +22,7 @@ export default function Portfolio () {
                     </div>
                 </div>
                 ))}
+                </div>
             </div>
         </section>
     )
