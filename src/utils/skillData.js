@@ -26,6 +26,10 @@ export const skills = [
     {
         title: "Application Programming Interface (API)",
         skill: [" Google Maps API ,", "Context API "]
+    },
+    {
+        title: "Application Deployment",
+        skill: [" GitHub Pages ,", " Heroku "]
     }
 ]
 
