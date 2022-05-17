@@ -22,7 +22,7 @@ export default function Resume() {
                     </div>
                 </div>
                 <div className={style.resumeLink}>
-                    <h2>Download Resume: <a href="https://github.com/jhara0994/react-portfolio/blob/main/src/images/Resume.pdf">Jared Haralson</a></h2>
+                    <h2>Download Resume: <a href="https://drive.google.com/file/d/1-2W_Dxx0Feq93Z0L7CUPdMbAgJOVL7Nk/view?usp=sharing">Jared Haralson</a></h2>
                 </div>
             </div>
         </section>
